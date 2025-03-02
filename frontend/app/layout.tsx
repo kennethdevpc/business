@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={urbanist.className} style={{ display: 'flex', flexDirection: 'column' }}>
         <Header />
-        <main className="max-w-[1200px] mx-auto px-4">{children}</main>
+        <main className=" mx-auto px-4">{children}</main>
         <Footer />
       </body>
     </html>
