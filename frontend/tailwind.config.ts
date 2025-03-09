@@ -13,6 +13,7 @@ export default {
         bermuda: '#4d7c0f',
         tertiary: '#862DE3',
         quaternary: '#E030D2',
+        quinary: '#0affb559',
 
         background: 'var(--background)',
         foreground: 'var(--foreground)',

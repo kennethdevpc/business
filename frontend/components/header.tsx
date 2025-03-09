@@ -1,7 +1,14 @@
+'use client'; // This tells Next.js that this component should be rendered on the client-side.
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <header className="border-b border-dashed py-4 px-4">
       <div className="mx-auto flex justify-around items-center">
@@ -21,8 +28,49 @@ export function Header() {
           <Link href="https://instagram.com" className="text-sm">
             IG
           </Link>
+
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center gap-4">
+            <a href="#about" className="hover:text-orange-500">
+              About Us
+            </a>
+            <a href="#plans" className="hover:text-orange-500">
+              Plans & Pricing
+            </a>
+            <a href="#schedule" className="hover:text-orange-500">
+              Schedule
+            </a>
+            <a href="#contact" className="hover:text-orange-500">
+              Contact
+            </a>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className="lg:hidden flex items-center">
+            <button onClick={toggleMenu} className="text-2xl">
+              {isMenuOpen ? 'X' : '☰'}
+            </button>
+          </div>
         </div>
       </div>
+      {/* Mobile Dropdown Menu */}
+      {isMenuOpen && (
+        <div className="lg:hidden flex flex-col items-center gap-4  mt-4 border-t fixed right-10  bg-quinary-custom bg-opacity-50 p-10 w-30">
+          <a href="#about" className="hover:text-orange-500">
+            About Us
+          </a>
+          <a href="#plans" className="hover:text-orange-500">
+            Plans & Pricing
+          </a>
+          <a href="#schedule" className="hover:text-orange-500">
+            Schedule
+          </a>
+          <a href="#contact" className="hover:text-orange-500">
+            Contact
+          </a>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded">Subscribe</button>
+        </div>
+      )}
     </header>
   );
 }

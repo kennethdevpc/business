@@ -41,6 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <h1 className="bg-secondary">hola</h1>
       <body className={urbanist.className} style={{ display: 'flex', flexDirection: 'column' }}>
         <Header />
         <main className=" mx-auto px-4">{children}</main>
