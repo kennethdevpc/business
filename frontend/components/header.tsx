@@ -10,7 +10,7 @@ export function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className="border-b border-dashed py-4 px-4">
+    <header className="border-b border-dashed py-4 px-4 absolute z-40 inline-block w-full top-5 md:top-10 px-20">
       <div className="mx-auto flex justify-around items-center">
         <div className="flex items-center gap-3">
           <div className="relative w-10 h-10">
