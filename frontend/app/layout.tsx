@@ -1,18 +1,8 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Urbanist } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 const urbanist = Urbanist({ subsets: ['latin'] });
 
@@ -43,8 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={urbanist.className} style={{ display: 'flex', flexDirection: 'column' }}>
         <Header />
-        {/* <main className=" mx-auto px-4">{children}</main>
-         */}
+        <div className="p-10 !important">p-8</div>
         {children}
         <Footer />
       </body>
