@@ -18,7 +18,7 @@ export function Footer() {
 
       <div className="md:flex md:flex-row flex-col text-lg p-2 mx-auto flex justify-around items-center gap-5 md:gap-10">
         <div className="flex flex-col items-center gap-1">
-          <div className="relative w-12 h-12">
+          <div className="relative w-12 h-12 ">
             <Image
               src="/salsaroots1.png"
               alt="SalsarootsFooter"
