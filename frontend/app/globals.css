@@ -57,7 +57,7 @@ body {
   background-color: #0affb569; /* Tu color definido en tailwind.config */
 }
 main {
-  background: linear-gradient(90.21deg, #f0fc1480 -5.91%, rgba(7, 197, 207, 0.5) 111.58%);
+  /* background: linear-gradient(90.21deg, #f0fc1480 -5.91%, rgba(7, 197, 207, 0.5) 111.58%); */
   height: 100vh;
   height: 100%;
 }

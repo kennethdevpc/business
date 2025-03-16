@@ -4,7 +4,7 @@ type Props = {};
 
 function Introduction({}: Props) {
   return (
-    <div className="z-20 w-full bg-darkBg/60 absolute">
+    <div className="z-20 w-full bg-darkBg/60 ">
       <div className="bg-">
         <div className="z-20 grid items-center h-full  p-13 py-20 md:py-0 md:grid-cols-2 md:px-40 ">
           <div className="flex flex-col justify-center max-w-xl px-5 md:place-items-start sm:place-items-center">

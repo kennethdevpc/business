@@ -8,15 +8,15 @@ import { FaInstagram } from 'react-icons/fa';
 export function Footer() {
   return (
     // <footer className="bg-quinary shadow-lg shadow-cyan-500/50 inset-shadow-sm inset-shadow-quinary py-4 px-20 absolute z-40 inline-block w-full  bottom-0 ">
-    <footer className="   py-4 px-20 absolute z-40 inline-block w-full  bottom-0 ">
+    <footer className="text-justify   py-4 px-10 md:px-20 md:absolute z-40 inline-block w-full  bottom-0 gap-10">
       <Image
         src={'/salsarootsfooter.png'}
         alt="Salsaroots"
         fill
-        className=" object-cover opacity-8  pointer-events-none"
+        className=" object-cover opacity-8  pointer-events-none md:block hidden"
       />
 
-      <div className="text-lg p-2 mx-auto flex justify-around items-center">
+      <div className="md:flex md:flex-row flex-col text-lg p-2 mx-auto flex justify-around items-center gap-5 md:gap-10">
         <div className="flex flex-col items-center gap-1">
           <div className="relative w-12 h-12">
             <Image
