@@ -33,7 +33,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={urbanist.className} style={{ display: 'flex', flexDirection: 'column' }}>
         <Header />
-        <div className="p-10 !important">p-8</div>
         {children}
         <Footer />
       </body>
