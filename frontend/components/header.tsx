@@ -14,7 +14,7 @@ export function Header() {
     <header className="py-4 px-20 absolute z-40 inline-block w-full top-5 md:top-10 ">
       <div className="mx-auto flex justify-around items-center">
         <div className="flex items-center gap-3">
-          <div className="relative w-10 h-10">
+          <div className="relative w-10 h-10 ">
             <Image
               src={'/salsaroots1.png'}
               alt="Salsaroots"
