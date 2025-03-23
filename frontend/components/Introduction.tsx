@@ -17,7 +17,7 @@ function Introduction() {
           </div>
           <div className="text-center md:col-span-3 relative w-full h-[190%] flex justify-center items-center flex-col">
             <p className="self-center p-2"></p>
-            <svg width="fill" height="60" className="text-secondary ">
+            <svg width="fill" height="60" className="text-secondary md:w-fit">
               {/* Definir el arco */}
               <path
                 id="arc"
@@ -59,7 +59,7 @@ function Introduction() {
               height={200}
               className="sm:w-[200px] sm:h-[20px] md:w-[70%] md:h-[25%] object-contain"
             />
-            <svg width="" height="60" className="text-secondary">
+            <svg width="" height="60" className="text-secondary  md:w-fit">
               <path
                 id="arcb"
                 d="M 10,8 Q 155,80 250,0"
