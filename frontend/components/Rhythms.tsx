@@ -5,7 +5,7 @@ type Props = {};
 
 function Rhythms({}: Props) {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-12 text-justify">
+    <div className=" max-w-6xl mx-auto px-4 py-2 text-justify">
       {/* Sección de Salsa */}
       <section className="mb-20">
         <h1 className="text-5xl font-bold mb-8 text-secondary ">Salsa</h1>

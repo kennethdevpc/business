@@ -7,15 +7,20 @@ function Introduction() {
       <div className="bg-">
         <div className="z-20 grid items-center h-full  p-13 py-20 md:py-0 md:grid-cols-4 lg:grid-cols-8 md:px-40 ">
           <div className="col-span-1 self-baseline flex  items-center flex-col justify-center h-full">
-            <p className="sm:text-3xl text-center md:text-2xl">
-              <span className="text-secondary">💃 Mix </span>
+            <p className="sm:text-3xl text-center md:text-3xl font-bold text-secondary">
+              <span className="bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent">
+                💃 Mix
+              </span>
               <br />
               <span>& </span>
               <br />
-              <span className="text-secondary">match styles each week!</span>
+
+              <span className="bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent">
+                match styles each week!
+              </span>
             </p>
           </div>
-          <div className="text-center md:col-span-3 relative w-full h-[190%] flex justify-center items-center flex-col">
+          <div className="text-center md:col-span-4 relative w-full h-[190%] flex justify-center items-center flex-col">
             <p className="self-center p-2"></p>
             <svg width="fill" height="60" className="text-secondary md:w-fit">
               {/* Definir el arco */}
@@ -57,7 +62,7 @@ function Introduction() {
               // layout="fill"
               width={360}
               height={200}
-              className="sm:w-[200px] sm:h-[20px] md:w-[70%] md:h-[25%] object-contain"
+              className="sm:w-[200px] sm:h-[20px] md:w-[90%] md:h-[25%] object-contain"
             />
             <svg width="" height="60" className="text-secondary  md:w-fit">
               <path
@@ -76,8 +81,8 @@ function Introduction() {
               </text>
             </svg>
           </div>
-          <div className="md:col-span-4  flex flex-col justify-center max-w-xl px-5 md:place-items-start sm:place-items-center">
-            <h2 className="mb-5 text-1xl leading-tight text-cen.max-w-mdter md:text-left md:text-3xl md:mb-10 self-center md:self-auto items-center">
+          <div className="md:col-span-3  flex flex-col justify-center max-w-xl px-5 md:place-items-start sm:place-items-center">
+            <h2 className="mb-5 text-1xl leading-tight text-cen.max-w-mdter md:text-left md:text-3xl md:mb-10 self-center md:self-auto items-center bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent">
               💃Dance,Unwind & Enjoy 🕺
               <br />
             </h2>
