@@ -21,7 +21,7 @@ function Introduction() {
               {/* Definir el arco */}
               <path
                 id="arc"
-                d="M 35,65 A 90,40 0 0,1 230,65"
+                d="M 45,65 A 90,40 0 0,1 245,65"
                 fill="transparent"
                 stroke="none"
                 strokeWidth="3"
@@ -30,7 +30,7 @@ function Introduction() {
               {/* Definir el segundo arco (más abajo) */}
               <path
                 id="arc2"
-                d="M 50,110 A 90,40 0 0,1 230,65"
+                d="M 50,100 A 90,40 0 0,1 245,75"
                 fill="transparent"
                 stroke="none"
                 strokeWidth="3"
@@ -62,7 +62,7 @@ function Introduction() {
             <svg width="" height="60" className="text-secondary  md:w-fit">
               <path
                 id="arcb"
-                d="M 10,8 Q 155,80 250,0"
+                d="M 40,2 Q 155,80 260,0"
                 fill="transparent"
                 stroke="none"
                 strokeWidth="3"
