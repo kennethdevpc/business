@@ -1,5 +1,9 @@
+import Contact from '@/components/Contact';
 import { CoverParticles } from '@/components/cover-particles';
 import Introduction from '@/components/Introduction';
+import Pricing from '@/components/Pricing';
+import Rhythms from '@/components/Rhythms';
+import Schedule from '@/components/Schedule';
 import Image from 'next/image';
 
 export default function Home() {
@@ -9,6 +13,10 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center min-h-screen py-2">
       <CoverParticles />
       <Introduction />
+      <Rhythms />
+      <Schedule />
+      <Pricing />
+      <Contact />
     </main>
     // <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
     //   <a

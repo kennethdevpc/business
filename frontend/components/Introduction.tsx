@@ -7,7 +7,7 @@ function Introduction() {
       <div className="bg-">
         <div className="z-20 grid items-center h-full  p-13 py-20 md:py-0 md:grid-cols-4 lg:grid-cols-8 md:px-40 ">
           <div className="col-span-1 self-baseline flex  items-center flex-col justify-center h-full">
-            <p className="sm:text-4xl text-center md:text-4xl">
+            <p className="sm:text-3xl text-center md:text-2xl">
               <span className="text-secondary">💃 Mix </span>
               <br />
               <span>& </span>
@@ -77,13 +77,13 @@ function Introduction() {
             </svg>
           </div>
           <div className="md:col-span-4  flex flex-col justify-center max-w-xl px-5 md:place-items-start sm:place-items-center">
-            <h2 className="mb-5 text-2xl leading-tight text-cen.max-w-mdter md:text-left md:text-4xl md:mb-10 self-center md:self-auto">
-              Dance, Unwind & Enjoy 💃🕺
+            <h2 className="mb-5 text-1xl leading-tight text-cen.max-w-mdter md:text-left md:text-3xl md:mb-10 self-center md:self-auto items-center">
+              💃Dance,Unwind & Enjoy 🕺
               <br />
             </h2>
 
             <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8 text-justify ">
-              Discover the magic of salsa and bachata. Dancing is more than just steps— it’s about
+              Discover the magic of salsa and bachata. Dancing is more than just steps it’s about
               releasing stress, gaining confidence, and connecting with the music.
             </p>
 
