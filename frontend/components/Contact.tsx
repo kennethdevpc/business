@@ -10,7 +10,7 @@ function Contact() {
     message: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -18,7 +18,7 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic here
     console.log('Form submitted:', formData);
@@ -32,7 +32,7 @@ function Contact() {
   };
 
   return (
-    <div className="z-20 w-full bg-darkBg/60 py-20">
+    <div className="z-20 w-full bg-darkBg/60 py-5">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
@@ -40,7 +40,7 @@ function Contact() {
           </h2>
 
           <p className="text-center text-lg mb-12">
-            Please fill out the form below and we'll get back to you as soon as possible.
+            Please fill out the form below and we&#39;ll get back to you as soon as possible.
           </p>
 
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-secondary/10 border border-gray-700/50">
@@ -49,10 +49,10 @@ function Contact() {
               <div className="md:col-span-1 flex flex-col justify-center">
                 <div className="bg-gray-800/70 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-all duration-300 border-l-4 border-secondary">
                   <h3 className="text-2xl font-bold mb-4 text-white">
-                    We'd love to hear from you!
+                    We&#39;d love to hear from you!
                   </h3>
                   <p className="text-lg mb-6 text-gray-300">
-                    Join us now—let's dance our way to happiness!
+                    Join us now let&#39;s dance our way to happiness!
                   </p>
 
                   <div className="mt-8 space-y-4">
@@ -158,7 +158,6 @@ function Contact() {
                       id="message"
                       name="message"
                       value={formData.message}
-                      onChange={handleChange}
                       required
                       rows={5}
                       className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-300 outline-none resize-none"

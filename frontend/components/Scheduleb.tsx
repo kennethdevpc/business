@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = {};
-
-function Scheduleb({}: Props) {
+function Scheduleb() {
   return <div>Scheduleb</div>;
 }
 

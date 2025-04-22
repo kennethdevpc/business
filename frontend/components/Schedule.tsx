@@ -14,7 +14,7 @@ type ClassInfo = {
 };
 
 export default function Schedule() {
-  const [activeDay, setActiveDay] = useState('all');
+  const [activeDay] = useState('all');
 
   const classes: ClassInfo[] = [
     {

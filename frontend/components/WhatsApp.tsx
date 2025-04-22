@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import type { FC } from 'react';
+
 import { FaWhatsapp } from 'react-icons/fa';
 
 type WhatsAppProps = {
@@ -10,11 +10,11 @@ type WhatsAppProps = {
   size?: 'small' | 'medium' | 'large';
 };
 
-const WhatsApp: FC<WhatsAppProps> = ({
+function WhatsApp({
   link = 'https://wa.link/yuij7m',
   label = 'Contact us on WhatsApp',
   size = 'medium',
-}) => {
+}: WhatsAppProps) {
   // Size mapping for responsive design
   const sizeClasses = {
     small: 'w-10 h-10 text-xl',
@@ -33,6 +33,6 @@ const WhatsApp: FC<WhatsAppProps> = ({
       <FaWhatsapp />
     </motion.button>
   );
-};
+}
 
 export default WhatsApp;

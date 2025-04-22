@@ -1,10 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import ImageSides from './ImageSides';
 
-type Props = {};
-
-function Rhythms({}: Props) {
+function Rhythms() {
   return (
     <div className=" max-w-6xl mx-auto px-4 py-2 text-justify">
       {/* Sección de Salsa */}
@@ -47,15 +44,21 @@ function Rhythms({}: Props) {
           </div>
 
           <div className="md:w-2/5 relative">
-            <div className="rounded-full overflow-hidden relative  mx-auto">
-              <Image
-                src="/salsaroots1.png"
-                alt="SalsarootsFooter"
-                // layout="fill"
-                width={360}
-                height={200}
-                className="sm:w-[200px] sm:h-[20px] md:w-[90%] md:h-[25%] object-contain"
-              />
+            <div
+              className="rounded-full overflow-hidden relative mx-auto"
+              style={{ width: '360px', height: '360px' }}
+            >
+              <iframe
+                src="https://www.instagram.com/p/DHktd9HimPE/embed"
+                width="360"
+                height="360"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                className="absolute inset-0 w-full h-full object-cover"
+                style={{ borderRadius: '50%' }}
+                allow="autoplay; encrypted-media"
+              ></iframe>
             </div>
             <p className="text-center mt-4 text-xl font-medium">Know more...</p>
           </div>
@@ -72,8 +75,8 @@ function Rhythms({}: Props) {
 
             <p className="mb-4 text-lg">
               Bachata is a sensual, intimate, and deeply emotional dance that allows you to connect
-              with the music and your partner. It's danced in four beats, with smooth hip movements,
-              elegant turns, and deep body expression.
+              with the music and your partner. It&apos;s danced in four beats, with smooth hip
+              movements, elegant turns, and deep body expression.
             </p>
 
             <ul className="space-y-3">

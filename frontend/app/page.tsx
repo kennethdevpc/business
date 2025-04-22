@@ -4,7 +4,6 @@ import Introduction from '@/components/Introduction';
 import Pricing from '@/components/Pricing';
 import Rhythms from '@/components/Rhythms';
 import Schedule from '@/components/Schedule';
-import Image from 'next/image';
 
 export default function Home() {
   return (

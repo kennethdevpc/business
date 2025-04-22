@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Facebook, Instagram, MailCheck, MapPin, PhoneCall } from 'lucide-react';
+import { MailCheck, MapPin, PhoneCall } from 'lucide-react';
 import { RiTiktokLine } from 'react-icons/ri';
 import { LuFacebook } from 'react-icons/lu';
 import { FaInstagram } from 'react-icons/fa';
@@ -9,7 +9,7 @@ export function Footer() {
   return (
     // <footer className="bg-quinary shadow-lg shadow-cyan-500/50 inset-shadow-sm inset-shadow-quinary py-4 px-20 absolute z-40 inline-block w-full  bottom-0 ">
     // <footer className="text-justify relative py-4 px-10 md:px-20 md:absolute z-40 inline-block w-full  bottom-0 gap-10">
-    
+
     <footer className="text-justify relative py-4 px-10 md:px-20 z-40 w-full gap-10">
       <Image
         src={'/salsarootsfooter.png'}
@@ -97,8 +97,8 @@ export function Footer() {
 
       <div className="mx-auto flex flex-col justify-around items-center p-2">
         <p className="text-sm">
-          💃 Dancing connects people! No matter if you're new or experienced, everyone is welcome to
-          join the rhythm! Let's move, learn, and grow together.
+          💃 Dancing connects people! No matter if you&apos;re new or experienced, everyone is
+          welcome to join the rhythm! Let&apos;s move, learn, and grow together.
         </p>
       </div>
     </footer>

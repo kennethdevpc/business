@@ -2,7 +2,7 @@ import React from 'react';
 
 function Pricing() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-12z-20 w-full bg-darkBg/60 py-4 relative overflow-hidden">
+    <div className="w-full max-w-6xl mx-auto px-4 py-1 z-20 w-full bg-darkBg/60  relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
@@ -257,7 +257,7 @@ function Pricing() {
               <div className="mt-auto pt-6 border-t border-gray-700/50">
                 <p className="mb-3 text-gray-300">
                   <span className="text-secondary">💃</span> One session to dive into salsa &
-                  bachata. Perfect if you can't attend regularly!
+                  bachata. Perfect if you can&apos;t attend regularly!
                 </p>
                 <p className="text-sm text-gray-400">
                   <span className="text-secondary">🔥</span> Join anytime! Simply attend a class and
@@ -375,11 +375,11 @@ function Pricing() {
         {/* FAQ section hint */}
         <div className="mt-16 text-center">
           <p className="text-gray-400">
-            Have questions? Check our{' '}
+            Have questions? Check our
             <a href="#faq" className="text-secondary hover:underline">
               FAQ section
-            </a>{' '}
-            or{' '}
+            </a>
+            or
             <a href="#contact" className="text-secondary hover:underline">
               contact us
             </a>

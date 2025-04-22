@@ -22,11 +22,11 @@ export function Header() {
               className="rounded-full object-cover"
             />
           </div>
-          <h1 className="text-xl font-bold ">Salsaroots</h1>
+          <h1 className="text-xl font-bold px-2">Salsaroots</h1>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <button className="border-dashed">Subscribe</button>
-          <Link href="https://instagram.com" className="text-sm">
+          <Link href="https://www.instagram.com/salsarootsacademy/" className="text-sm">
             IG
           </Link>
 
