@@ -1,16 +1,29 @@
-import React from 'react';
-import Image from 'next/image';
+'use client';
+import React, { useRef, useEffect } from 'react';
+// import Image from 'next/image';
 
 function Rhythms() {
+  // Referencia para el video
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Asegurarse de que el video se reproduzca automáticamente
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error('Error al reproducir el video:', error);
+      });
+    }
+  }, []);
+
   return (
-    <div className=" max-w-6xl mx-auto px-4 py-2 text-justify">
+    <div className="max-w-6xl mx-auto px-4 py-2 text-justify">
       {/* Sección de Salsa */}
       <section className="mb-20">
-        <h1 className="text-5xl font-bold mb-8 text-secondary ">Salsa</h1>
+        <h1 className="text-5xl font-bold mb-8 text-secondary">Salsa</h1>
 
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-3/5">
-            <h2 className="text-2xl font-semibold mb-4 text-secondary ">What is Salsa? 💃 🔥</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-secondary">What is Salsa? 💃 🔥</h2>
 
             <p className="mb-4 text-lg">
               Salsa is a high-energy, electrifying dance that makes you move with passion and style.
@@ -46,19 +59,29 @@ function Rhythms() {
           <div className="md:w-2/5 relative">
             <div
               className="rounded-full overflow-hidden relative mx-auto"
-              style={{ width: '360px', height: '360px' }}
+              style={{ width: '300px', height: '300px' }}
             >
-              <iframe
-                src="https://www.instagram.com/p/DHktd9HimPE/embed"
-                width="360"
-                height="360"
-                frameBorder="0"
-                scrolling="no"
-                allowTransparency={true}
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ borderRadius: '50%' }}
-                allow="autoplay; encrypted-media"
-              ></iframe>
+              {/* Video circular que se reproduce automáticamente */}
+              <div className="absolute inset-0 w-full h-full">
+                <video
+                  ref={videoRef}
+                  className="absolute w-[150%] h-[150%] object-cover"
+                  style={{
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    borderRadius: '50%',
+                  }}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  {/* Reemplaza esta URL con la URL directa de tu video */}
+                  <source src="/salsa-video.mp4" type="video/mp4" />
+                  Tu navegador no soporta videos HTML5.
+                </video>
+              </div>
             </div>
             <p className="text-center mt-4 text-xl font-medium">Know more...</p>
           </div>
@@ -67,11 +90,11 @@ function Rhythms() {
 
       {/* Sección de Bachata */}
       <section>
-        <h1 className="text-5xl font-bold mb-8 text-secondary ">Bachata</h1>
+        <h1 className="text-5xl font-bold mb-8 text-secondary">Bachata</h1>
 
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-3/5">
-            <h2 className="text-2xl font-semibold mb-4 text-secondary ">What is Bachata? 💞🎵</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-secondary">What is Bachata? 💞🎵</h2>
 
             <p className="mb-4 text-lg">
               Bachata is a sensual, intimate, and deeply emotional dance that allows you to connect
@@ -103,20 +126,47 @@ function Rhythms() {
               </li>
             </ul>
           </div>
-
           <div className="md:w-2/5 relative">
-            <div className="rounded-full overflow-hidden relative  mx-auto">
+            <div
+              className="rounded-full overflow-hidden relative mx-auto"
+              style={{ width: '300px', height: '300px' }}
+            >
+              {/* Video circular que se reproduce automáticamente */}
+              <div className="absolute inset-0 w-full h-full">
+                <video
+                  ref={videoRef}
+                  className="absolute w-[150%] h-[150%] object-cover"
+                  style={{
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    borderRadius: '50%',
+                  }}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  {/* Reemplaza esta URL con la URL directa de tu video */}
+                  <source src="/bachata-video.mp4" type="video/mp4" />
+                  Tu navegador no soporta videos HTML5.
+                </video>
+              </div>
+            </div>
+            <p className="text-center mt-4 text-xl font-medium">Know more...</p>
+          </div>
+          {/* <div className="md:w-2/5 relative">
+            <div className="rounded-full overflow-hidden relative mx-auto">
               <Image
                 src="/salsaroots1.png"
                 alt="SalsarootsFooter"
-                // layout="fill"
                 width={360}
                 height={200}
                 className="sm:w-[200px] sm:h-[20px] md:w-[90%] md:h-[25%] object-contain"
               />
             </div>
             <p className="text-center mt-4 text-xl font-medium">Know more...</p>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
