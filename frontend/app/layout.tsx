@@ -3,6 +3,7 @@ import { Urbanist } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import WhatsApp from '@/components/WhatsApp';
 
 const urbanist = Urbanist({ subsets: ['latin'] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className={urbanist.className} style={{ display: 'flex', flexDirection: 'column' }}>
         <Header />
         {children}
+        <WhatsApp></WhatsApp>
         <Footer />
       </body>
     </html>

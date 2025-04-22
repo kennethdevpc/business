@@ -9,6 +9,7 @@ export function Footer() {
   return (
     // <footer className="bg-quinary shadow-lg shadow-cyan-500/50 inset-shadow-sm inset-shadow-quinary py-4 px-20 absolute z-40 inline-block w-full  bottom-0 ">
     // <footer className="text-justify relative py-4 px-10 md:px-20 md:absolute z-40 inline-block w-full  bottom-0 gap-10">
+    
     <footer className="text-justify relative py-4 px-10 md:px-20 z-40 w-full gap-10">
       <Image
         src={'/salsarootsfooter.png'}
