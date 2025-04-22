@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Clock, User, Award } from 'lucide-react';
 import { motion } from 'motion/react';
+
 type ClassInfo = {
   day: string;
   dayEn: string;
@@ -15,35 +16,33 @@ type ClassInfo = {
 export default function Schedule() {
   const [activeDay, setActiveDay] = useState('all');
 
-  // Información de las clases
   const classes: ClassInfo[] = [
     {
-      day: 'Lunes',
+      day: 'Monday',
       dayEn: 'Monday',
       time: '8:00 PM - 9:00 PM',
-      type: 'Salsa & Bachata',
-      level: 'Todos los niveles',
-      instructor: 'Carlos',
+      type: 'Salsa or Bachata',
+      level: 'All levels',
+      instructor: 'Kenneth',
     },
     {
-      day: 'Miércoles',
+      day: 'Wednesday',
       dayEn: 'Wednesday',
       time: '8:00 PM - 9:00 PM',
-      type: 'Salsa & Bachata',
-      level: 'Todos los niveles',
-      instructor: 'Carlos',
+      type: 'Salsa Or Bachata',
+      level: 'All levels',
+      instructor: 'Kenneth',
     },
     {
-      day: 'Domingo',
+      day: 'Sunday',
       dayEn: 'Sunday',
       time: '2:00 PM - 3:00 PM',
-      type: 'Salsa & Bachata',
-      level: 'Todos los niveles',
-      instructor: 'Carlos',
+      type: 'Salsa or Bachata',
+      level: 'All levels',
+      instructor: 'Kenneth',
     },
   ];
 
-  // Filtrar clases según el día seleccionado
   const filteredClasses =
     activeDay === 'all' ? classes : classes.filter((c) => c.dayEn.toLowerCase() === activeDay);
 
@@ -55,46 +54,17 @@ export default function Schedule() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="text-6xl font-bold bg-gradient-to-r from-rose-500 via-fuchsia-500 to-purple-600 bg-clip-text text-transparent mb-4">
-          Horario de Clases
+        <h2 className="text-6xl font-bold bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent mb-4">
+          Class Schedule
+          <span className="bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent">
+            💃 Mix
+          </span>
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Descubre nuestras clases de baile y únete a la diversión. ¡Mueve tu cuerpo al ritmo de la
-          música!
+        <p className="text-xl  max-w-2xl mx-auto">
+          Discover our dance classes and join the fun. Move your body to the rhythm of the music!
         </p>
       </motion.div>
 
-      {/* Selector de días */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
-        className="mb-10"
-      >
-        <div className="w-full max-w-md mx-auto">
-          <div className="grid grid-cols-4 w-full bg-rose-50 rounded-lg overflow-hidden">
-            {['all', 'monday', 'wednesday', 'sunday'].map((day, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveDay(day)}
-                className={`py-2 px-4 focus:outline-none transition-colors ${
-                  activeDay === day ? 'bg-rose-500 text-white' : 'hover:bg-rose-100'
-                }`}
-              >
-                {day === 'all'
-                  ? 'Todos'
-                  : day === 'monday'
-                  ? 'Lunes'
-                  : day === 'wednesday'
-                  ? 'Miércoles'
-                  : 'Domingo'}
-              </button>
-            ))}
-          </div>
-        </div>
-      </motion.div>
-
-      {/* Tarjetas de clases */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -108,7 +78,7 @@ export default function Schedule() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 * index, duration: 0.5 }}
           >
-            <div className="overflow-hidden border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full bg-white">
+            <div className="overflow-hidden border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-secondary/10 border border-gray-700/50 ">
               <div
                 className={`h-2 w-full ${
                   index % 3 === 0
@@ -135,14 +105,14 @@ export default function Schedule() {
 
                 <h3 className="text-xl font-bold mb-4">{classItem.type}</h3>
 
-                <div className="space-y-3 text-gray-600">
+                <div className="space-y-3 ">
                   <div className="flex items-center">
-                    <Clock className="h-4 w-4 mr-2 text-gray-400" />
+                    <Clock className="h-4 w-4 mr-2 " />
                     <span>{classItem.time}</span>
                   </div>
 
                   <div className="flex items-center">
-                    <Award className="h-4 w-4 mr-2 text-gray-400" />
+                    <Award className="h-4 w-4 mr-2 " />
                     <span>{classItem.level}</span>
                   </div>
 
@@ -161,7 +131,7 @@ export default function Schedule() {
                       : 'bg-purple-600 hover:bg-purple-700'
                   }`}
                 >
-                  Reservar Clase
+                  Book Class
                 </button>
               </div>
             </div>
@@ -169,63 +139,26 @@ export default function Schedule() {
         ))}
       </motion.div>
 
-      {/* Cita motivacional */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
         className="mb-12"
       >
-        <div className="border-none bg-gradient-to-r from-rose-500 to-purple-600 text-white shadow-xl rounded-lg">
+        <div className="border-none bg-gradient-to-r from-senary to-purple-600 text-white shadow-xl rounded-lg">
           <div className="p-8 text-center">
             <div className="flex justify-center mb-4">
               <div className="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
                 <span className="text-2xl">💃</span>
               </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2">¡Siente la alegría de bailar!</h3>
+            <h3 className="text-2xl font-bold mb-2">Feel the joy of dancing!</h3>
             <p className="text-lg opacity-90">
-              Abraza el movimiento, conoce gente nueva y experimenta la energía positiva que trae el
-              baile a tu vida.
+              Embrace the movement, meet new people, and experience the positive energy dance brings
+              into your life.
             </p>
           </div>
         </div>
-      </motion.div>
-
-      {/* Información de contacto */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.5 }}
-        className="text-center bg-white p-8 rounded-2xl shadow-lg"
-      >
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">
-          ¿Tienes dudas sobre nuestros horarios?
-        </h3>
-        <p className="text-gray-600 mb-6 max-w-lg mx-auto">
-          Estamos aquí para ayudarte. Contáctanos por WhatsApp o visita nuestro estudio para más
-          información.
-        </p>
-        <button
-          className="bg-green-500 hover:bg-green-600 text-white px-6 py-6 h-auto text-lg rounded-full flex items-center justify-center mx-auto"
-          onClick={() => window.open('https://wa.link/yuij7m', '_blank')}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="mr-2"
-          >
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-          </svg>
-          Contáctanos por WhatsApp
-        </button>
       </motion.div>
     </div>
   );

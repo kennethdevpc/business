@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import ImageSides from './ImageSides';
 
 type Props = {};
 
@@ -46,25 +47,14 @@ function Rhythms({}: Props) {
           </div>
 
           <div className="md:w-2/5 relative">
-            <div className="rounded-full overflow-hidden relative w-64 h-64 md:w-80 md:h-80 mx-auto">
-              <div className="absolute inset-0 bg-red-600 bg-opacity-80 flex items-center justify-center rounded-full">
-                <div className="w-20 h-20 border-4 border-white rounded-full flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="white"
-                    className="w-10 h-10"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
+            <div className="rounded-full overflow-hidden relative  mx-auto">
               <Image
-                src="/images/salsa-dance.jpg"
-                alt="Salsa dancers"
-                width={320}
-                height={320}
-                className="object-cover"
+                src="/salsaroots1.png"
+                alt="SalsarootsFooter"
+                // layout="fill"
+                width={360}
+                height={200}
+                className="sm:w-[200px] sm:h-[20px] md:w-[90%] md:h-[25%] object-contain"
               />
             </div>
             <p className="text-center mt-4 text-xl font-medium">Know more...</p>
@@ -112,25 +102,14 @@ function Rhythms({}: Props) {
           </div>
 
           <div className="md:w-2/5 relative">
-            <div className="rounded-full overflow-hidden relative w-64 h-64 md:w-80 md:h-80 mx-auto">
-              <div className="absolute inset-0 bg-red-600 bg-opacity-80 flex items-center justify-center rounded-full">
-                <div className="w-20 h-20 border-4 border-white rounded-full flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="white"
-                    className="w-10 h-10"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
+            <div className="rounded-full overflow-hidden relative  mx-auto">
               <Image
-                src="/images/bachata-dance.jpg"
-                alt="Bachata dancers"
-                width={320}
-                height={320}
-                className="object-cover"
+                src="/salsaroots1.png"
+                alt="SalsarootsFooter"
+                // layout="fill"
+                width={360}
+                height={200}
+                className="sm:w-[200px] sm:h-[20px] md:w-[90%] md:h-[25%] object-contain"
               />
             </div>
             <p className="text-center mt-4 text-xl font-medium">Know more...</p>

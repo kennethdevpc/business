@@ -56,7 +56,7 @@ function Contact() {
                   </p>
 
                   <div className="mt-8 space-y-4">
-                    <div className="flex items-center space-x-3 text-gray-300 hover:text-secondary transition-colors">
+                    {/* <div className="flex items-center space-x-3 text-gray-300 hover:text-secondary transition-colors">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
@@ -72,7 +72,7 @@ function Contact() {
                         />
                       </svg>
                       <span>info@salsaroots.com</span>
-                    </div>
+                    </div> */}
                     <div className="flex items-center space-x-3 text-gray-300 hover:text-secondary transition-colors">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -2,23 +2,26 @@ import React from 'react';
 
 function Pricing() {
   return (
-    <div className="z-20 w-full bg-darkBg/60 py-16 relative overflow-hidden">
+    <div className="w-full max-w-6xl mx-auto px-4 py-12z-20 w-full bg-darkBg/60 py-4 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-secondary to-purple-400">
+        <h2 className="text-center p-4 text-6xl font-bold bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent mb-4">
           Plans & Pricing
+          <span className="bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent">
+            💃
+          </span>
         </h2>
 
-        <p className="text-center text-gray-300 mb-16 max-w-2xl mx-auto">
+        <p className="text-center  mb-16 max-w-3xl mx-auto">
           Choose the perfect plan that suits your dancing journey. All plans include access to our
-          vibrant community and regular social events.
+          vibrant community.
         </p>
 
         {/* Grupal lessons section */}
-        <div className="mb-20">
+        <div className="mb-10">
           <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center relative">
             <span className="bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent">
               Grupal lessons

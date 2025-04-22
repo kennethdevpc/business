@@ -5,7 +5,7 @@ function Introduction() {
   return (
     <div className="z-20 w-full bg-darkBg/60 ">
       <div className="bg-">
-        <div className="z-20 grid items-center h-full  p-13 py-20 md:py-0 md:grid-cols-4 lg:grid-cols-8 md:px-40 ">
+        <div className="md:mx-10 z-20 grid items-center h-full  p-13 py-20 md:py-0 md:grid-cols-4 lg:grid-cols-8 md:px-40 ">
           <div className="col-span-1 self-baseline flex  items-center flex-col justify-center h-full">
             <p className="sm:text-3xl text-center md:text-3xl font-bold text-secondary">
               <span className="bg-gradient-to-r from-secondary to-purple-400 bg-clip-text text-transparent">
@@ -91,22 +91,6 @@ function Introduction() {
               Discover the magic of salsa and bachata. Dancing is more than just steps it’s about
               releasing stress, gaining confidence, and connecting with the music.
             </p>
-
-            <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
-              <a
-                href="/portfolio"
-                className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50"
-              >
-                View Projects
-              </a>
-              <a
-                href="https://wa.link/yuij7m"
-                target="_blank"
-                className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary"
-              >
-                Contact me
-              </a>
-            </div>
           </div>
         </div>
       </div>
