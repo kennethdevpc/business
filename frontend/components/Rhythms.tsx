@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from 'react';
 // import Image from 'next/image';
 
 function Rhythms() {
-  // Referencia para el video
+  // Referencia para el video ok
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
