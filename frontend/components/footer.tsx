@@ -59,7 +59,9 @@ export function Footer() {
               <span className="text-secondary">
                 <MailCheck />
               </span>
-              <span> salsadenhaag.nl@gmail.com</span>
+              <span>
+                <a href="mailto:info@salsaroots.eu">info@salsaroots.eu</a>
+              </span>
             </p>
           </div>
         </div>
