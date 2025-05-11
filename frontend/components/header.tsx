@@ -14,14 +14,14 @@ export function Header() {
     <header className="py-4 px-20 absolute z-40 inline-block w-full top-5 md:top-10 ">
       <div className="mx-auto flex justify-around items-center">
         <div className="flex items-center gap-3">
-          <div className="relative w-10 h-10 ">
+          <Link href="/" className="relative w-10 h-10 ">
             <Image
               src={'/salsaroots1.png'}
               alt="Salsaroots"
               fill
               className="rounded-full object-cover"
             />
-          </div>
+          </Link>
           <h1 className="text-xl font-bold px-2">Salsaroots</h1>
         </div>
         <div className="flex items-center gap-2">
@@ -32,18 +32,18 @@ export function Header() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="#about" className="hover:text-orange-500">
+            <Link href="/aboutUs" className="hover:text-orange-500">
               About Us
-            </a>
-            <a href="#plans" className="hover:text-orange-500">
+            </Link>
+            <Link href="/plans" className="hover:text-orange-500">
               Plans & Pricing
-            </a>
-            <a href="#schedule" className="hover:text-orange-500">
+            </Link>
+            <Link href="/schedule" className="hover:text-orange-500">
               Schedule
-            </a>
-            <a href="#contact" className="hover:text-orange-500">
+            </Link>
+            <Link href="/contact" className="hover:text-orange-500">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu */}

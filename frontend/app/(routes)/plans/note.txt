@@ -1,0 +1,61 @@
+'use client';
+
+const page = () => {
+  return (
+    <section className="w-full bg-darkBg text-white py-20 px-6 md:px-40">
+      <div className="max-w-5xl mx-auto text-center space-y-12">
+        <h2 className="text-4xl md:text-6xl font-bold">
+          Choose your <span className="text-secondary">Plan</span>
+        </h2>
+        <p className="text-lg md:text-xl text-gray-300">
+          Whether you're just starting or want to refine your moves, we have something for everyone.
+        </p>
+
+        <div className="grid gap-10 md:grid-cols-3">
+          {/* Basic Plan */}
+          <div className="bg-black/40 border border-secondary rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-bold mb-4 text-secondary">Trial Class</h3>
+            <p className="text-4xl font-extrabold mb-2">€10</p>
+            <p className="mb-6 text-gray-300">Perfect to try your first steps!</p>
+            <ul className="text-left space-y-2 text-gray-200">
+              <li>✓ One-time session</li>
+              <li>✓ Salsa or Bachata</li>
+              <li>✓ No experience required</li>
+            </ul>
+          </div>
+
+          {/* Regular Plan */}
+          <div className="bg-secondary text-black rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-bold mb-4">Monthly Pass</h3>
+            <p className="text-4xl font-extrabold mb-2">€35</p>
+            <p className="mb-6">Join weekly classes and grow steadily</p>
+            <ul className="text-left space-y-2">
+              <li>✓ 4 classes per month</li>
+              <li>✓ Salsa & Bachata options</li>
+              <li>✓ Group practice included</li>
+            </ul>
+          </div>
+
+          {/* Premium Plan */}
+          <div className="bg-black/40 border border-secondary rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-bold mb-4 text-secondary">Private Class</h3>
+            <p className="text-4xl font-extrabold mb-2">€25</p>
+            <p className="mb-6 text-gray-300">Tailored to your rhythm and level</p>
+            <ul className="text-left space-y-2 text-gray-200">
+              <li>✓ 1-on-1 attention</li>
+              <li>✓ Flexible schedule</li>
+              <li>✓ Technique & styling</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="pt-10 text-lg text-gray-400">
+          All classes are full of joy, music, and friendly energy. Come as you are — we’ll dance
+          together!
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default page;

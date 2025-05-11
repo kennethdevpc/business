@@ -14,6 +14,7 @@
   --color-quinary: #3e5200;
   --color-senary: #ff0000;
   --color-septenary: #23e400;
+  --color-octonary: #6e6a1c;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --background-gradient-cover: linear-gradient(
