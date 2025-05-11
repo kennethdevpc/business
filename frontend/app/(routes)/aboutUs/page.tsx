@@ -13,13 +13,13 @@ const AboutUs = () => {
           competitions, and experiences full of rhythm, energy, and creativity.
         </p>
         <p className="text-lg md:text-xl leading-relaxed text-gray-300">
-          Whether you have experience or it's your very first time, our classes are designed to be
-          joyful, welcoming, and unforgettable. We believe every class should be an experience
+          Whether you have experience or it&#39;s your very first time, our classes are designed to
+          be joyful, welcoming, and unforgettable. We believe every class should be an experience
           filled with love, laughter, and connection.
         </p>
         <p className="text-lg md:text-xl leading-relaxed text-gray-300">
-          We've performed with <strong>artistic groups</strong> and actively participated in many
-          dance competitions, giving us a clear vision of what it takes to shine on stage. But
+          We&#39;ve performed with <strong>artistic groups</strong> and actively participated in
+          many dance competitions, giving us a clear vision of what it takes to shine on stage. But
           beyond the stage, we also live and love <strong>social dancing</strong>—in parties, homes,
           and community events.
         </p>
