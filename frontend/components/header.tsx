@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     // <header className="border-b border-dashed py-4 px-4 absolute z-40 inline-block w-full top-5 md:top-10 px-20">
-    <header className="fixed bg-secondary/80 py-1 px-20 absolute z-40 inline-block w-full py-5 md:top-0 ">
+    <header className="fixed bg-secondary/90 py-1 px-20 absolute z-40 inline-block w-full py-7 md:top-0 ">
       <div className="mx-auto flex justify-around items-center">
         <div className="flex items-center gap-3">
           <Link href="/" className="relative w-10 h-10 ">
@@ -27,7 +27,7 @@ export function Header() {
               className="rounded-full object-cover"
             />
           </Link>
-          <h1 className="text-xl font-bold px-2">Salsaroots</h1>
+          <h1 className="text-2xl font-bold px-2">Salsaroots</h1>
         </div>
         <div className="flex items-center gap-2">
           <button className="border-dashed">Subscribe</button>
@@ -36,17 +36,17 @@ export function Header() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Link href="/aboutUs" className="hover:text-orange-500">
+          <div className="hidden lg:flex items-center gap-4 text-xl">
+            <Link href="/aboutUs" className="hover:text-quaternary">
               About Us
             </Link>
-            <Link href="/plans" className="hover:text-orange-500">
+            <Link href="/plans" className="hover:text-quaternary">
               Plans & Pricing
             </Link>
-            <Link href="/schedule" className="hover:text-orange-500">
+            <Link href="/schedule" className="hover:text-quaternary">
               Schedule
             </Link>
-            <Link href="/contact" className="hover:text-orange-500">
+            <Link href="/contact" className="hover:text-quaternary">
               Contact
             </Link>
           </div>
@@ -64,7 +64,7 @@ export function Header() {
               )}
             </button>
             {isMenuOpen && (
-              <div className="absolute top-full right-0 mt-0 flex flex-col items-center gap-4 border-t bg-nonary bg-opacity-50 p-3 w-40 rounded-tl-lg rounded-b-lg shadow-lg shadow-secondary/20 z-20">
+              <div className="absolute top-full right-0 mt-0 flex flex-col items-center gap-2 text-center border-t bg-nonary bg-opacity-50 p-3 w-40 rounded-tl-lg rounded-b-lg shadow-lg shadow-secondary/20 z-20">
                 {itemsNavbar.map((item) => (
                   <Link
                     key={item.id}
@@ -72,10 +72,10 @@ export function Header() {
                     onMouseEnter={() => setIsHovered(item.id)}
                     onMouseLeave={() => setIsHovered(0)}
                     className={`${
-                      isHovered === item.id ? 'text-orange-500' : ''
-                    } hover:text-orange-500 ${
+                      isHovered === item.id ? 'text-quaternary' : ''
+                    } hover:text-quaternary ${
                       router === item.link ? 'bg-darkBG' : ''
-                    } mx-auto px-5 rounded`}
+                    } mx-auto  rounded w-full py-2 px-1`}
                   >
                     {item.title}
                   </Link>
@@ -95,6 +95,26 @@ export function Header() {
         </div>
       </div>
       {/* Mobile Dropdown Menu */}
+      {/* Efecto de degradado separado (fuera del contenedor principal) */}
+      <div className="header-gradient"></div>
+
+      {/* Estilos para el degradado */}
+      <style jsx>{`
+        .header-gradient {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -40px; /* Ajusta este valor para controlar dónde comienza el degradado */
+          height: 40px; /* Altura del degradado */
+          background: linear-gradient(
+            to bottom,
+            var(--color-secondary, #f5741c) 0%,
+            transparent 100%
+          );
+          opacity: 0.8;
+          z-index: -1;
+        }
+      `}</style>
     </header>
   );
 }
