@@ -265,9 +265,14 @@ function Pricing() {
                 </p>
               </div>
 
-              <button className="mt-6 py-3 px-6 rounded-xl bg-gray-700 text-white font-semibold shadow-lg transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 hover:shadow-xl">
-                Book Now
-              </button>
+              <a
+                href="https://wa.link/yuij7m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center mt-6 py-3 px-6 rounded-xl bg-gray-700 text-white font-semibold shadow-lg transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 hover:shadow-xl"
+              >
+                Book now
+              </a>
             </div>
 
             {/* 1 Private Class */}
@@ -316,9 +321,14 @@ function Pricing() {
                 </p>
               </div>
 
-              <button className="mt-6 py-3 px-6 rounded-xl bg-secondary/80 text-white font-semibold shadow-lg shadow-secondary/20 transform hover:scale-105 transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:shadow-secondary/30">
+              <a
+                href="https://wa.link/yuij7m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-center mt-6 py-3 px-6 rounded-xl bg-secondary/80 text-white font-semibold shadow-lg shadow-secondary/20 transform hover:scale-105 transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:shadow-secondary/30"
+              >
                 Book Private Class
-              </button>
+              </a>
             </div>
 
             {/* 1 Private grupal */}
@@ -365,9 +375,14 @@ function Pricing() {
                 </p>
               </div>
 
-              <button className="mt-6 py-3 px-6 rounded-xl bg-purple-500/80 text-white font-semibold shadow-lg shadow-purple-500/20 transform hover:scale-105 transition-all duration-300 hover:bg-purple-500 hover:shadow-xl hover:shadow-purple-500/30">
+              <a
+                href="https://wa.link/yuij7m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center mt-6 py-3 px-6 rounded-xl bg-purple-500/80 text-white font-semibold shadow-lg shadow-purple-500/20 transform hover:scale-105 transition-all duration-300 hover:bg-purple-500 hover:shadow-xl hover:shadow-purple-500/30"
+              >
                 Book Group Event
-              </button>
+              </a>
             </div>
           </div>
         </div>
