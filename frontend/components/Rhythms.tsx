@@ -62,24 +62,21 @@ function Rhythms() {
               style={{ width: '300px', height: '300px' }}
             >
               {/* Video circular que se reproduce automáticamente */}
-              <div className="absolute inset-0 w-full h-full">
+              <div className="relative w-[300px] h-[300px] mx-auto">
                 <video
-                  ref={videoRef}
-                  className="absolute w-[150%] h-[150%] object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   style={{
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    borderRadius: '50%',
+                    maskImage:
+                      'radial-gradient(circle at center, black 45%, black 55%, transparent 70%)',
+                    WebkitMaskImage:
+                      'radial-gradient(circle at center, black 45%, black 55%, transparent 70%)',
                   }}
                   autoPlay
                   muted
                   loop
                   playsInline
                 >
-                  {/* Reemplaza esta URL con la URL directa de tu video */}
                   <source src="/salsa-video.mp4" type="video/mp4" />
-                  Tu navegador no soporta videos HTML5.
                 </video>
               </div>
             </div>
@@ -132,15 +129,14 @@ function Rhythms() {
               style={{ width: '300px', height: '300px' }}
             >
               {/* Video circular que se reproduce automáticamente */}
-              <div className="absolute inset-0 w-full h-full">
+              <div className="relative w-[300px] h-[300px] mx-auto">
                 <video
-                  ref={videoRef}
-                  className="absolute w-[150%] h-[150%] object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   style={{
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    borderRadius: '50%',
+                    maskImage:
+                      'radial-gradient(circle at center, black 45%, black 55%, transparent 70%)',
+                    WebkitMaskImage:
+                      'radial-gradient(circle at center, black 45%, black 55%, transparent 70%)',
                   }}
                   autoPlay
                   muted
