@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Clock, User, Award } from 'lucide-react';
+import { Clock, User, Award, Download } from 'lucide-react';
 import { motion } from 'motion/react';
 
 type ClassInfo = {
@@ -10,7 +10,7 @@ type ClassInfo = {
   time: string;
   type: string;
   level: string;
-  instructor: string;
+  location: string;
 };
 
 export default function Page() {
@@ -22,16 +22,16 @@ export default function Page() {
       dayEn: 'Monday',
       time: '8:00 PM - 9:00 PM',
       type: 'Salsa or Bachata',
-      level: 'All levels',
-      instructor: 'Kenneth',
+      level: 'Beginners level',
+      location: 'TGV Hellas (Hilversumstraat, 4001 JA Tiel)',
     },
     {
-      day: 'Wednesday',
-      dayEn: 'Wednesday',
-      time: '8:00 PM - 9:00 PM',
+      day: 'Thursday',
+      dayEn: 'Thursday',
+      time: '6:00 PM - 7:00 PM',
       type: 'Salsa Or Bachata',
-      level: 'All levels',
-      instructor: 'Kenneth',
+      level: 'Basic level (some experience)',
+      location: 'T NEST (Scheeringlaan 2, 4001 WJ Tiel)',
     },
     {
       day: 'Sunday',
@@ -39,7 +39,7 @@ export default function Page() {
       time: '2:00 PM - 3:00 PM',
       type: 'Salsa or Bachata',
       level: 'All levels',
-      instructor: 'Kenneth',
+      location: 'TGV Hellas (Hilversumstraat, 4001 JA Tiel)',
     },
   ];
 
@@ -118,7 +118,7 @@ export default function Page() {
 
                   <div className="flex items-center">
                     <User className="h-4 w-4 mr-2 text-gray-400" />
-                    <span>Instructor: {classItem.instructor}</span>
+                    <span>location: {classItem.location}</span>
                   </div>
                 </div>
 
@@ -157,6 +157,14 @@ export default function Page() {
               Embrace the movement, meet new people, and experience the positive energy dance brings
               into your life.
             </p>
+            <a
+              href="/dans_kalender_feb_jun_2026_v3.pdf"
+              download="dans_kalender_feb_jun_2026_v3.pdf"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            >
+              <Download className="h-5 w-5" />
+              Download Full Calendar (PDF)
+            </a>
           </div>
         </div>
       </motion.div>
