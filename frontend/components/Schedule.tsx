@@ -65,14 +65,7 @@ export default function Schedule() {
         </p>
       </motion.div>
 
-      <a
-        href="/dans_kalender_feb_jun_2026_v3.pdf"
-        download="dans_kalender_feb_jun_2026_v3.pdf"
-        className="inline-flex items-center gap-2 px-6 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
-      >
-        <Download className="h-5 w-5" />
-        Download Full Calendar (PDF)
-      </a>
+  
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -166,6 +159,15 @@ export default function Schedule() {
               Embrace the movement, meet new people, and experience the positive energy dance brings
               into your life.
             </p>
+             {/* Botón para descargar el PDF */}
+            <a
+              href="/dans_kalender_feb_jun_2026_v3.pdf"
+              download="dans_kalender_feb_jun_2026_v3.pdf"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            >
+              <Download className="h-5 w-5" />
+              Download Full Calendar (PDF)
+            </a>
           </div>
         </div>
       </motion.div>
