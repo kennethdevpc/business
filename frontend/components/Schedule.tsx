@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Clock, User, Award } from 'lucide-react';
+import { Clock, User, Award, Download } from 'lucide-react';
 import { motion } from 'motion/react';
 
 type ClassInfo = {
