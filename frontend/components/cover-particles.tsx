@@ -15,7 +15,7 @@ export const CoverParticles = () => {
   }, []);
   return (
     init && (
-      <div className="w-[0px]">
+      <div className="w-[0px]" style={{ pointerEvents: 'none' }}>
         <Particles
           id="tsparticles"
           options={{
