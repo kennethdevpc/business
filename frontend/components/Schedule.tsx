@@ -10,7 +10,7 @@ type ClassInfo = {
   time: string;
   type: string;
   level: string;
-  instructor: string;
+  location: string;
 };
 
 export default function Schedule() {
@@ -22,16 +22,16 @@ export default function Schedule() {
       dayEn: 'Monday',
       time: '8:00 PM - 9:00 PM',
       type: 'Salsa or Bachata',
-      level: 'All levels',
-      instructor: 'Kenneth',
+      level: 'Beginners level',
+      location: 'TGV Hellas (Hilversumstraat, 4001 JA Tiel)',
     },
     {
-      day: 'Wednesday',
-      dayEn: 'Wednesday',
-      time: '8:00 PM - 9:00 PM',
+      day: 'Thursday',
+      dayEn: 'Thursday',
+      time: '6:00 PM - 7:00 PM',
       type: 'Salsa Or Bachata',
-      level: 'All levels',
-      instructor: 'Kenneth',
+      level: 'Basic level (some experience)',
+      location: 'T NEST (Scheeringlaan 2, 4001 WJ Tiel)',
     },
     {
       day: 'Sunday',
@@ -39,7 +39,7 @@ export default function Schedule() {
       time: '2:00 PM - 3:00 PM',
       type: 'Salsa or Bachata',
       level: 'All levels',
-      instructor: 'Kenneth',
+      location: 'TGV Hellas (Hilversumstraat, 4001 JA Tiel)',
     },
   ];
 
@@ -118,7 +118,7 @@ export default function Schedule() {
 
                   <div className="flex items-center">
                     <User className="h-4 w-4 mr-2 text-gray-400" />
-                    <span>Instructor: {classItem.instructor}</span>
+                    <span>Location: {classItem.location}</span>
                   </div>
                 </div>
 
